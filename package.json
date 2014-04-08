@@ -1,0 +1,19 @@
+{
+  "name": "brandsmith-web",
+  "version": "0.0.1",
+  "description": "The Website of brandsmith",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/sumitbisht/brandsmith"
+  },
+  "author": "sumit bisht",
+  "license": "mit",
+  "bugs": {
+    "url": "https://github.com/sumitbisht/brandsmith/issues"
+  },
+  "homepage": "https://github.com/sumitbisht/brandsmith"
+}
