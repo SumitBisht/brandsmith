@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 About Us
+  div(id="about-us")
+    div(id="details") We are an upcoming Pharmaceutical company headquartered in New Delhi and focusing on specialized medicine production in an economical but effective and safe to consume manner.
+    div(id="details2") To get in touch, do reach us at the following address:
+    div(id="address") #{address}
+    div(id="contact") You can also contact us at the following numbers:
+    div(id="contact-details") #{contact}
+    div(id="contact2") Or, email us at :
+    div(id="emailid")
+      a(href="mailto://#{email}") #{email}

@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/sumitbisht/brandsmith",
   "dependencies": {
-    "ejs": "~1.0.0",
+    "jade": "~1.0.0",
     "express": "~3.5.1"
   }
 }
