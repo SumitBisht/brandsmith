@@ -2,5 +2,9 @@ extends layout
 
 block content
   h1= title
-  each image, i in images
-    img(src="pics/#{image}")
+  div(id='sliderFrame')
+    div(id='slider')
+      a(href='#' target='_blank')
+        img(src='')
+      each image, i in images
+        img(src="pics/#{image}")
