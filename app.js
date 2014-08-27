@@ -32,6 +32,25 @@ app.get('/about', function(req, res){
   });
 });
 
+app.get('/news', function(req, res) {
+   res.render('news', {date: new Date().getDate()+'-'+new Date().getMonth()+'-'+new Date().getFullYear() });
+});
+
+app.get('/health', function(req, res) {
+   res.render('health');
+});
+
+app.get('/products', function(req, res) {
+    res.render('products', {
+      product_details: {
+        'acemith' : 'The acemith advantage - this product delivers quality drug injection methodologies.',
+        'cifomith' : 'Is a generic pain relieving medicine that acts as a suppressent without causing after effects like drowsiness',
+        'mythpanto' : 'Suppresses vomiting and nausea without causing any side effects',
+        'livobrand' : 'Provides relief from Respiratory Tract Infection'
+      }
+    });
+})
+
 app.get('/*', function(req, res){
   res.render('404', { title: 'Page Not found', fallbackpage: '/' });
 });

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1(align='center') Products
+  p Following are the list of various products that are currently available in market.
+  each name, details in product_details
+    h3=details
+    p=name
+    p 
