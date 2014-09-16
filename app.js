@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', function(req, res){
-	res.render('index', { title: 'Welcome',
+	res.render('index', { title: 'Brandsmith Lifesciences',
 	  images: ['front.jpg', 'front1.jpg', 'front2.jpg'] 
 	});
 });
@@ -26,9 +26,9 @@ app.get('/', function(req, res){
 app.get('/about', function(req, res){
 	res.render('about_us', { 
   	title: 'About Us', 
-  	address: '123 somewhere street', 
-  	contact: '12345', 
-  	email:'user@email.com'
+  	address: 'N-146, GROUND FLOOR NARAYAN NAGAR LAXMI NAGAR EXTENTION DELHI-110092', 
+  	contact: 'Gaurav Gupta', 
+  	email:'brandsmithlifesciences@yahoo.Cefomith'
   });
 });
 
@@ -43,10 +43,11 @@ app.get('/health', function(req, res) {
 app.get('/products', function(req, res) {
     res.render('products', {
       product_details: {
-        'acemith' : 'The acemith advantage - this product delivers quality drug injection methodologies.',
-        'cifomith' : 'Is a generic pain relieving medicine that acts as a suppressent without causing after effects like drowsiness',
-        'mythpanto' : 'Suppresses vomiting and nausea without causing any side effects',
-        'livobrand' : 'Provides relief from Respiratory Tract Infection'
+        'Acemith' : 'The acemith advantage - this product delivers quality drug injection methodologies.',
+        'Cefomith' : 'Is a generic pain relieving medicine that acts as a suppressent without causing after effects like drowsiness',
+        'Mithpanto-DSR' : 'Suppresses vomiting and nausea without causing any side effects',
+        'Livobrand' : 'Provides relief from Respiratory Tract Infection',
+        'Vykomith': 'This is a multivitamin syrup laced with protein, iron and vitamins'
       }
     });
 })
