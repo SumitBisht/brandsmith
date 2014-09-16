@@ -4,7 +4,5 @@ block content
   h1(align='center')= title
   div(id='sliderFrame')
     div(id='slider')
-      a(href='#' target='_blank')
-        img(src="pics/#{images[0]}")
       each image, i in images
         img(src="pics/#{image}")
